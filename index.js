@@ -33,8 +33,8 @@ const Calculator = {
 }
 
 console.log(Calculator.add(1, 3))
-function add(a) {
-    return `1 + ${a}`
+function add(test) {
+    return `1 + ${test}`
 }
 function actionApplyer(str, array) {
     let temp = str
