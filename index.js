@@ -29,10 +29,4 @@ const substract = new Calculator(4, 2);
 const multiply = new Calculator(4, 2);
 const divide = new Calculator(4, 2);*/
 
-const actionApplyer = (int, arr) => {
-    if (Array.isArray(arr) && arr.length) {
-        let abc = arr.reduce((acc, curr) => curr(acc), int);
-        return abc;
-    }
-    else { return int }
-}
+const actionApplyer = (int, arr) => (Array.isArray(arr) && arr.length) ? arr.reduce((acc, curr) => curr(acc), int) : int;
